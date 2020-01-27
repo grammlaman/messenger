@@ -48,7 +48,4 @@ class User{
     }
 
 }
-let a = new User;
 let eventBus = new EventBus();
-eventBus.add('click',a.loginAsGuest);
-eventBus.trigger('click');
