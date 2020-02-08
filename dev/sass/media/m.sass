@@ -1,3 +1,39 @@
 $unit: 'px'
 .section
   +w($mobile#{$unit})
+.form
+  +w(800px)
+  background-color: #fff
+  padding: 50px 30px
+  &-input
+    +w(100%)
+    border-bottom: 1px solid #000
+    margin-bottom: 10px
+    padding: 5px 20px
+    text-align: right
+.submit
+  +wh(100%,50px)
+  display: flex
+  justify-content: center
+  align-items: center
+  border: 1px solid #000
+  margin-top: 20px
+.close
+  width: 50px
+  height: 50px
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #fff
+  border-radius: 100%
+  span
+    width: 1px
+    height: 15px
+    display: block
+    background-color: #000
+    transform: rotate(45deg)
+    position: absolute
+  span:last-child
+    transform: rotate(-45deg)
+.none
+  display: none
